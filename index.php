@@ -191,9 +191,9 @@
             </div>
             <div class="col-lg-3">
                 <form action="managecart.php" method="POST">
-                    <div class="card mt-5" style="width:17rem;">
-                        <img src="images/p6.png" class="card-img-top img-fluid p-4 ms-4" alt="Women Dress Double" style="height:15rem; width:13rem;">
-                        <div class="card-body text-center lh-1">
+                    <div class="card text-center justify-content-center mt-5" style="width:17rem;">
+                        <img src="images/p6.png" class="card-img-top img-fluid align-self-center p-2" alt="Women Dress Double" style="height1:5rem; width:12rem;">
+                        <div class="card-body">
                             <h5 class="card-title">Women Dress Double</h5>
                             <p class="card-text">Prices: Rs.900</p>
                             <button type="submit" class="btn btn-info" name="addtocart">Add to Cart</button>

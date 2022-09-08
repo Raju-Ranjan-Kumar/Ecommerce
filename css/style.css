@@ -18,7 +18,7 @@ body {font-family:'Montserrat', sans-serif; color:#0c0c0c; background-color:#fff
 .slider_bg_box {position:absolute; top:0; left:0; width:100%; height:100%; z-index: -1;}
 .slider_bg_box img { width:100%; height:100%; -o-object-fit:cover; object-fit:cover; -o-object-position:top right; object-position:top right;}
 .slider_section .detail-box h1 span {color:#f7444e;}
-.slider_section .detail-box h1 {font-size:4.5rem; font-weight:bold; margin-bottom:15px; color:#002c3e; line-height:70px;}
+.slider_section .detail-box h1 {font-size:3.5rem; font-weight:bold; margin-bottom:15px; color:#002c3e; line-height:70px;}
 p {display:block; margin-block-start:1em; margin-block-end:1em; margin-inline-start:0px; margin-inline-end:0px;}
 .slider_section .detail-box a {display:inline-block; padding:12px 45px; background-color:#f7444e; border:1px solid #f7444e; color:#ffffff; border-radius:0; -webkit-transition:all 0.3s; transition:all 0.3s; margin-top:10px; font-weight:700;}
 a {text-decoration:none !important;}
@@ -34,3 +34,16 @@ ol {display:block; list-style-type:decimal; margin-block-start:1em; margin-block
 .h2, h2 {font-size:2.2rem; padding-top:7;}
 .col-4 {width:30.33%;}
 .dlv-img{font-size:28px; font-weight:bold;}
+
+.s-media{background-color:#d4ced0; font-size:20px; font-weight:bold;}
+body{overflow-x: hidden;}
+.bttn{background-color:#f7444e; border:1px solid #f7444e; border-radius:3px; color:#ffffff;}
+.card{
+    margin:auto; cursor:pointer; border-radius:4px;  background:#fff;
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+}
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}

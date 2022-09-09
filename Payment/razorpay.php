@@ -12,79 +12,49 @@
     <!-- boxicons css $ js -->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
-    <!-- this script is use for razorpay payment gatway integration -->
+    <!-- razorpay payment gatway integration -->
     <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
     <title>Payment</title>
     <style>
         body{background-color:aliceblue;}
+        .d-center{display:grid; place-items: center;}
     </style>
 </head>
 <body>
-    <!-- <div class="container">
-    <div class="col-lg-3 pb-5">
-                    <div class="border bg-light rounded p-4">
-                        <form action="" method="">
-                            <h4 class="">Complete Your Payment</h4>
-                            <h5 id="gtotal"> </h5> <br>
-                            <input type="hidden" name="gtotalVal" value="gtotalVal" id="gtotalVal">
-
-                            <?php if (isset($_SESSION['cart']) && count($_SESSION['cart'])>0) {  ?>
-
-                            <div class="mb-3">
-                                <input type="text" name="fname" class="form-control" placeholder="Full Name" required>
+    <div class="container d-center">
+        <div class="col-lg-3 pb-5">
+            <div class="border bg-light rounded mt-5">
+                <form action="purchase.php" method="POST">
+                    <div class="rounded-5">
+                        <div class="border-bottom border-2 p-3">
+                            <h5 class="text-center">Complete Your Payment</h5>
+                        </div>
+                        <div class="p-4">
+                            <div class="input-group flex-nowrap mb-2">
+                                <span class="input-group-text" id="addon-wrapping"><i class='bx bxs-user'></i></span>
+                                <input type="text" class="form-control" id="name" name="fname" value="<?php echo $_POST['fname']; ?>">
                             </div>
-                            <div class="mb-3">
-                                <input type="number" name="phone" class="form-control" placeholder="Phone Number" required>
+                            <div class="input-group flex-nowrap mb-2">
+                                <span class="input-group-text" id="addon-wrapping"><i class='bx bxs-phone'></i></span>
+                                <input type="number" class="form-control" id="phone" name="phone" value="<?php echo $_POST['phone']; ?>">
                             </div>
-                            <div class="mb-3">
-                                <input type="text" name="address" class="form-control" placeholder="Address" required>
+
+                            <input type="hidden" class="form-control" id="address" name="address" value="<?php echo $_POST['address']; ?>">
+
+                            <div class="input-group flex-nowrap mb-2">
+                                <span class="input-group-text" id="addon-wrapping"><i class='bx bx-credit-card'></i></span>
+                                <input type="text" class="form-control" id="pay_mode" name="pay_mode" value="<?php echo $_POST['pay_mode']; ?>">
                             </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="pay_mode" value="ONLINE" id="flexRadioDefault2">
-                                <label class="form-check-label" for="flexRadioDefault2">Online Payment</label>
+                            <div class="input-group flex-nowrap mb-3">
+                                <span class="input-group-text" id="addon-wrapping"><i class='bx bx-rupee'></i></span>
+                                <input type="text" class="form-control" id="amt" name="gtotalVal" value="<?php echo $_POST['gtotalVal']; ?>">
                             </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="pay_mode" value="COD" id="flexRadioDefault1">
-                                <label class="form-check-label" for="flexRadioDefault1">Cash On Delevry</label>
-                            </div> <br>
-                            <button class="btn btn-primary btn-block form-control" name="purchase">Make Purchase</button>
-
-                            <?php } ?>
-                        </form>
+                            <button type="button" class="btn btn-primary btn-block form-control" id="btn" name="btn" value="Pay Now" onclick="pay_now()">Pay Now</button>
+                        </div>
                     </div>
-                </div>
-    </div> -->
-    <div class="container mt-5 col-3">
-        <form action="" method="post">
-            <div class="card rounded-5">
-                <div class="border-bottom border-2 p-4">
-                    <h5 class="text-center mb-0">Complete Your Payment</h5>
-                </div>
-                <div class="p-4">
-                    <div class="input-group flex-nowrap">
-                        <span class="input-group-text" id="addon-wrapping"><i class='bx bxs-user'></i></span>
-                        <input type="text" class="form-control" id="name" name="fname" value="<?php echo $_POST['fname']; ?>">
-                    </div>
-                    <div class="input-group flex-nowrap mt-3">
-                        <span class="input-group-text" id="addon-wrapping"><i class='bx bxs-phone'></i></span>
-                        <input type="number" class="form-control" id="phone" name="phone" value="<?php echo $_POST['phone']; ?>">
-                    </div>
-
-                    <input type="hidden" class="form-control" id="address" name="address" value="<?php echo $_POST['address']; ?>">
-
-                    <div class="input-group flex-nowrap mt-3">
-                        <span class="input-group-text" id="addon-wrapping"><i class='bx bx-credit-card'></i></span>
-                        <input type="text" class="form-control" id="pay_mode" name="pay_mode" value="<?php echo $_POST['pay_mode']; ?>">
-                    </div>
-                    <div class="input-group flex-nowrap mt-3">
-                        <span class="input-group-text" id="addon-wrapping"><i class='bx bx-rupee'></i></span>
-                        <input type="text" class="form-control" id="amt" name="gtotalVal" value="<?php echo $_POST['gtotalVal']; ?>">
-                    </div><br>
-
-                    <button type="button" class="btn btn-primary form-control" id="btn" name="btn" value="Pay Now" onclick="pay_now()">Pay Now</button>
-                </div>
+                </form>
             </div>
-        </form>
+        </div>
     </div>
 
     <script>

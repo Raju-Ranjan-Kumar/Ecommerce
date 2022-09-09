@@ -9,9 +9,9 @@
     }
 ?>
 <!-- header -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light ">
     <div class="container-fluid">
-        <a class="navbar-brand" href="index.php"><img width="250" src="images/codeaegis.jpg" alt="logo" class=></a>
+        <a class="ps-2" href="index.php"><img width="250" src="images/codeaegis.jpg" alt="logo"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -36,7 +36,7 @@
                 <li class="nav-item">
                     <a class="nav-link active" href="#contact">Contact</a>
                 </li>
-                <li class="nav-item align-self-center">
+                <li class="nav-item">
                     <?php
                         session_start();
                         $count = 0;
@@ -44,13 +44,16 @@
                             $count = count($_SESSION['cart']);
                         }
                     ?>
-                    <a class="nav-link active" href="mycart.php"><i class='bx bxs-cart'><sup><?php echo $count; ?></sup></i></a>
+                    <a class="nav-link active" href="mycart.php"><i class='bx bxs-cart size'><sup><?php echo $count; ?></sup></i></a>
                 </li>
-                <li class="nav-item align-self-center">
-                    <a class="nav-link active" href="#"><i class='bx bx-search'></i></a>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#"><i class='bx bxs-heart-circle size'></i></a>
                 </li>
-                <li class="nav-item align-self-center">
-                    <a class="nav-link active" href="#"><i class='bx bxs-user'></i></a>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#"><i class='bx bx-search size'></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#"><i class='bx bxs-user size'></i></a>
                 </li>
             </ul>
         </div>

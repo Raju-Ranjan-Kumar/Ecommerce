@@ -16,10 +16,10 @@
         <title>Product page</title>
     </head>
     <body>
-        <div class="container border-top border-1 border-dark">
-            <div class="pt-5 heading-shop">Our Products</div>
+        <div class="container">
+            <div class="col-lg-12 text-center border rounded bg-secondary my-4 text-light"><h1 class="mb-0 p-1">Our Products</h1></div>
             <div class="row pb-5">
-            <div class="col-lg-3">
+                <div class="col-lg-3">
                     <form action="managecart.php" method="POST">
                         <div class="card text-center justify-content-center mt-4" style="width:17rem;">
                             <img src="images/p1.png" class="card-img-top img-fluid align-self-center p-2" alt="Men Shirt Aliceblue" style="height:15rem; width:12rem;">

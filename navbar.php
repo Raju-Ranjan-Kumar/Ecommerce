@@ -9,7 +9,7 @@
     }
 ?>
 <!-- header -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light ">
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
     <div class="container-fluid">
         <a class="ps-2" href="index.php"><img width="250" src="images/codeaegis.jpg" alt="logo"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,10 +31,10 @@
                     <a class="nav-link active" href="product.php">Products</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">Blog</a>
+                    <a class="nav-link active" href="#contact">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="#contact">Contact</a>
+                    <a class="nav-link active" href="#">Login</a>
                 </li>
                 <li class="nav-item">
                     <?php
@@ -51,9 +51,6 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" href="#"><i class='bx bx-search size'></i></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="#"><i class='bx bxs-user size'></i></a>
                 </li>
             </ul>
         </div>

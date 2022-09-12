@@ -21,7 +21,7 @@
             <div id="customCarousel1" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <div class="container ">
+                        <div class="container">
                             <div class="row">
                                 <div class="col-md-6 col-lg-6 ">
                                     <div class="detail-box">
@@ -49,7 +49,7 @@
                         <div class="col ">
                             <div class="card card-1 bg-dark rounded p-3">
                                 <div class="">
-                                    <i class='bx bx-run fs-2 fw-bold text-light'></i>
+                                    <i class='bx bx-run fs-2 fw-bold text-success'></i>
                                 </div>
                                 <div class="card-body">
                                     <h4 class="align-self-center card-title fw-bold text-light"> Fast Delivery </h4>
@@ -60,7 +60,7 @@
                         <div class="col">
                             <div class="card card-1 bg-dark rounded p-3">
                                 <div class="">
-                                    <i class='bx bx-car fs-2 fw-bold text-light'></i>
+                                    <i class='bx bx-car fs-2 fw-bold text-danger'></i>
                                 </div>
                                 <div class="card-body">
                                     <h4 class="align-self-center card-title fw-bold text-light"> Free Shiping </h4>
@@ -71,7 +71,7 @@
                         <div class="col">
                             <div class="card card-1 bg-dark rounded p-3">
                                 <div class="">
-                                    <i class='bx bx-podcast fs-2 fw-bold text-light'></i>
+                                    <i class='bx bx-podcast fs-2 fw-bold text-primary'></i>
                                 </div>
                                 <div class="card-body">
                                     <h4 class="align-self-center card-title fw-bold text-light"> Best Quality </h4>
@@ -117,6 +117,7 @@
                 <div class="col-lg-3">
                     <form action="managecart.php" method="POST">
                         <div class="card text-center justify-content-center mt-4" style="width:17rem;">
+                            <a class="wishlist" href="#"><i class='bx bxs-heart-circle'></i></a>
                             <img src="images/p1.png" class="card-img-top img-fluid align-self-center p-2" alt="Men Shirt Aliceblue" style="height:15rem; width:12rem;">
                             <div class="card-body">
                                 <h5 class="card-title">Men Shirt Aliceblue</h5>
@@ -131,6 +132,7 @@
                 <div class="col-lg-3">
                     <form action="managecart.php" method="POST">
                         <div class="card text-center justify-content-center mt-4" style="width:17rem;">
+                            <a class="wishlist" href="#"><i class='bx bxs-heart-circle'></i></a>
                             <img src="images/p2.png" class="card-img-top img-fluid align-self-center p-2" alt="Men Shirt Black" style="height:15rem; width:12rem;">
                             <div class="card-body">
                                 <h5 class="card-title">Men Shirt Black</h5>
@@ -145,6 +147,7 @@
                 <div class="col-lg-3">
                     <form action="managecart.php" method="POST">
                         <div class="card text-center justify-content-center mt-4" style="width:17rem;">
+                            <a class="wishlist" href="#"><i class='bx bxs-heart-circle'></i></a>
                             <img src="images/p3.png" class="card-img-top img-fluid align-self-center p-2" alt="Women Dress Frock" style="height:15rem; width:12rem;">
                             <div class="card-body">
                                 <h5 class="card-title">Women Dress Frock</h5>
@@ -159,6 +162,7 @@
                 <div class="col-lg-3">
                     <form action="managecart.php" method="POST">
                         <div class="card text-center justify-content-center mt-4" style="width:17rem;">
+                            <a class="wishlist" href="#"><i class='bx bxs-heart-circle'></i></a>
                             <img src="images/p4.png" class="card-img-top img-fluid align-self-center p-2" alt="Women Dress Brown" style="height:15rem; width:12rem;">
                             <div class="card-body">
                                 <h5 class="card-title">Women Dress Brown</h5>
@@ -173,6 +177,7 @@
                 <div class="col-lg-3">
                     <form action="managecart.php" method="POST">
                         <div class="card text-center justify-content-center mt-5" style="width:17rem;">
+                            <a class="wishlist" href="#"><i class='bx bxs-heart-circle'></i></a>
                             <img src="images/p5.png" class="card-img-top img-fluid align-self-center p-2" alt="Women Dress Kurti" style="height:15rem; width:12rem;">
                             <div class="card-body">
                                 <h5 class="card-title">Women Dress Kurti</h5>
@@ -187,6 +192,7 @@
                 <div class="col-lg-3">
                     <form action="managecart.php" method="POST">
                         <div class="card text-center justify-content-center mt-5" style="width:17rem;">
+                            <a class="wishlist" href="#"><i class='bx bxs-heart-circle'></i></a>
                             <img src="images/p6.png" class="card-img-top img-fluid align-self-center p-2" alt="Women Dress Double" style="height:15rem; width:12rem;">
                             <div class="card-body">
                                 <h5 class="card-title">Women Dress Double</h5>
@@ -201,6 +207,7 @@
                 <div class="col-lg-3">
                     <form action="managecart.php" method="POST">
                         <div class="card text-center justify-content-center mt-5" style="width:17rem;">
+                            <a class="wishlist" href="#"><i class='bx bxs-heart-circle'></i></a>
                             <img src="images/p7.png" class="card-img-top img-fluid align-self-center p-2" alt="Women Dress Black" style="height:15rem; width:12rem;">
                             <div class="card-body">
                                 <h5 class="card-title">Women Dress Black</h5>
@@ -215,6 +222,7 @@
                 <div class="col-lg-3">
                     <form action="managecart.php" method="POST">
                         <div class="card text-center justify-content-center mt-5" style="width:17rem;">
+                            <a class="wishlist" href="#"><i class='bx bxs-heart-circle'></i></a>
                             <img src="images/p8.png" class="card-img-top img-fluid align-self-center p-2" alt="Men Shirt Blue" style="height:15rem; width:12rem;">
                             <div class="card-body">
                                 <h5 class="card-title">Men Shirt Blue</h5>
